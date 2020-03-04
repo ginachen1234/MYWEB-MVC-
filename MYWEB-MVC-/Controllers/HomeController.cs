@@ -21,14 +21,9 @@ namespace MYWEB_MVC_.Controllers
 
         public IActionResult Index()
         {
-            return View();
-        }
-
-        public ActionResult Index()
-        {
             var staticLessons = new Lesson[]
             {
-                new Lesson
+                 new Lesson
     {
         Title = "Serve localized content",
         Slug = "serve-localized-content",
@@ -66,11 +61,14 @@ namespace MYWEB_MVC_.Controllers
             {
                 Title = "Content management > copy 2",
                 Copy = "As mentioned, the Contentful web app is a client that uses the Content Management API. Therefore, you could replicate the functionality that the Contentful web app provides by making an API call. This is a powerful aspect of an API-first design because it helps you to connect Contentful to third-party systems."
-            }
-        }
-    }
-            };
+                    }
+                 }
+                }
+           };
+            
             ViewBag.Lession = staticLessons;
+            return View();
+
         }
 
         public IActionResult Privacy()
