@@ -7,4 +7,13 @@
 
 
 
+  <ItemGroup>
+    <None Include="**/*" />
+    <None Include="**/*" />
+    <None Include="**/*" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Bootstrap.Less" Version="3.4.1" />
+    <PackageReference Include="bootstrap" Version="4.4.1" />
+  </ItemGroup>
 </Project>
