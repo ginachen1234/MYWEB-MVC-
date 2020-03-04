@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home page";
+}
+
+    <div class="text-center">
+        <h1>Welcome to MVC MyWeb</h1>
+        <p>The time on the server is @DateTime.Now</p>
+
+
+        @foreach (var Less in ViewBag.Lession)
+        {
+            <p>Title:@Less.Title</p>
+            <p>Slug:@Less.Slug</p>
+
+            foreach (var m in Less.Modules)
+            {
+                <p>Module:@m.Title</p>
+                <p>Copy:@m.Copy</p>
+            }
+        }
+    </div>
